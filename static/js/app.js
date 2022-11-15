@@ -5,6 +5,7 @@ const tableData = data;
 // Reference the HTML table using D3
 var tbody = d3.select("tbody");
 
+
 function buildTable(data) {
     // Clear existing data
     tbody.html("")
@@ -26,3 +27,28 @@ data.forEach((dataRow) => {
         cell.text(val);
     });
 });
+
+
+function handleClick() {
+
+    // Grabe the datetime value
+    let date = d3.select("#datetune").property("value");
+
+    // Set a default filter
+    let filteredData = tableData;
+
+    // Check if a date added as a filter
+    if (date) {
+        // Filter data based on the entered date
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+
+    // Create the table based on filtered or original data
+    buildTable(filteredData);
+}
+
+// Tell JS to listen to the click and execute the handleClick function
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
