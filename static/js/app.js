@@ -9,7 +9,6 @@ var tbody = d3.select("tbody");
 function buildTable(data) {
     // Clear existing data
     tbody.html("")
-}
 
 // Loop through data
 data.forEach((dataRow) => {
@@ -25,14 +24,16 @@ data.forEach((dataRow) => {
         
         // Put the values of the key-value pair in each cell 
         cell.text(val);
-    });
+    }
+    );
 });
+}
 
 
 function handleClick() {
 
     // Grabe the datetime value
-    let date = d3.select("#datetune").property("value");
+    let date = d3.select("#datetime").property("value");
 
     // Set a default filter
     let filteredData = tableData;
