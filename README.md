@@ -27,7 +27,7 @@ For using the interactive dynamic part and filtering the table, un the left side
 
 ![](static/images/filtered.png)
 
---
+---
 
 ## Summary
 
