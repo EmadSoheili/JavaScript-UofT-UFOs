@@ -15,11 +15,11 @@ The previous project contained just one filter, but in this project multiple fil
 
 The page contains two parts.
 
-*Static: Header, Title, Paragraph, etc.
+  * Static: Header, Title, Paragraph, etc.
 
 ![](static/images/static.png)
 
-*Dynamic: Table, and its Filters
+  * Dynamic: Table, and its Filters
 
 ![](static/images/dynamic.png)
 
@@ -39,5 +39,5 @@ Because the filters are looking for exact match, any kind of deviation from the 
 
 ### Recommendation
 
-*We can add a input box for comments in order to search for a word or phrase in comments and deliver us matches.
-*We can add a some chart and summary statistics for convey a better mesage. For example, we can have a bar chart for the shape of the UFOs.
+  * We can add a input box for comments in order to search for a word or phrase in comments and deliver us matches.
+  * We can add a some chart and summary statistics for convey a better mesage. For example, we can have a bar chart for the shape of the UFOs.
